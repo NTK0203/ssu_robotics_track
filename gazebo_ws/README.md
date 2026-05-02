@@ -55,13 +55,13 @@
 작성된 패키지들을 통합하여 로봇을 구동하는 표준 절차입니다.
 
 ```bash
-# 1. 시뮬레이션 환경 실행 (로봇 스폰 및 컨트롤러 활성화)
+# 1. 시뮬레이션 환경 실행
 ros2 launch simple_arm_description gazebo_spawn_launch.py
 
-# 2. MoveIt2 인터페이스 실행 (경로 계획 두뇌 구동)
+# 2. MoveIt2 인터페이스 실행
 ros2 launch simple_arm_moveit demo_launch.py
 
-# 3. 궤적 추적 실습 (특정 웨이포인트 전송)
+# 3. 궤적 추적 실습
 ros2 run simple_arm_trajectory send_waypoint
 
 # 4. 검증 포인트
